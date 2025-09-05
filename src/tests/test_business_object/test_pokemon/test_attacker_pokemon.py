@@ -4,10 +4,10 @@ from business_object.statistic import Statistic
 class TestAttackerPokemon:
     def test_get_coef_damage_type(self):
         # GIVEN
-        snorlax = AttackerPokemon(stat_current=Statistic(attack=100, defense=100))
+        poke_attack = AttackerPokemon(stat_current=Statistic(attack=100, speed=100))
 
         # WHEN
-        multiplier = snorlax.get_pokemon_attack_coef()
+        multiplier = poke_attack.get_pokemon_attack_coef()
 
         # THEN
         assert multiplier == 2
