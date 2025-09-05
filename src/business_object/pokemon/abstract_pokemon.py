@@ -1,7 +1,7 @@
 import copy
 
 from business_object.statistic import Statistic
-from abc import ABC, abstractmethod
+from abc import abstractmethod
 
 
 class AbstractPokemon:
